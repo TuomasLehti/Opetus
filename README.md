@@ -17,7 +17,7 @@ Lähdekoodia ohjelmoinnin opettamiseen
     </ul>
     <li>rect: piirtää suorakaiteen.</li>
     <ul>
-      </li>Neljä parametriä: suorakaiteen vasemman yläkulman x- ja y-koordinaatit sekä suorakaiteen leveys ja korkeus.</li>
+      <li>Neljä parametriä: suorakaiteen vasemman yläkulman x- ja y-koordinaatit sekä suorakaiteen leveys ja korkeus.</li>
     </ul>
   </ul>
 </ul>
