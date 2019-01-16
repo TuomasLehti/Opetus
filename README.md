@@ -3,9 +3,21 @@ Lähdekoodia ohjelmoinnin opettamiseen
 
 <h2>1. oppitunti</h2>
 
+<h3>Johdanto</h3>
+
+<p>Javascript on ohjelmointikieli, jolla tehtyjä skriptejä, eli ohjelmia voi ajaa www-selaimella. Käytännössä ohjelmakoodi on www-sivujen lähdekoodin seassa, joten Javascript-ohjelmoijan pitää osata myös www-sivujen koodauskieli, eli html.</p>
+<p>P5.js on Javascriptin päälle rakennettu laajennusosa, joka tuo ohjelmoijalle helpon mahdollisuuden luoda grafiikkaa ja animaatioita.</p>
+<p><a href="https://editor.p5js.org/">P5.js Web Editor</a> on internetissä toimiva sivu, jolla Javascript-ohjelmointia helpotetaan edelleen, koska se etäännyttää ohjelmoijan www-sivujen kanssa toimimisesta. Ohjelman voi kirjoittaa suoraan www-selaimeen, ja tulokset näkee silmänräpäyksessä.</p>
+<p>Kotitehtävä: luo itsellesi tili p5.js web editoriin.</p>
+
+<h3>Naiivi Viron lippu</h3>
+
+<p>Ensimmäinen tehtävä on piirtää Viron lippu, joka on vaakasuuntainen trikolori. Värit ylhäältä alaspäin ovat sininen, musta, ja valkoinen.</p>
+
+
 <ul>
   
-  <li>Naiivi saksan lippu</li>
+  <li>Naiivi Viron lippu</li>
   <ul>
     <li>Mitat ja värit heitetty lonkalta.</li>
     <li>Javascript-komento eli oikealta nimeltään aliohjelma- tai funktiokutsu. Komento ja parametrit sulkeissa.</li>
