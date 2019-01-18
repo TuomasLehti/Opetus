@@ -13,7 +13,9 @@ Lähdekoodia ohjelmoinnin opettamiseen
 <h3>Naiivi Viron lippu</h3>
 
 <p>Ensimmäinen tehtävä on piirtää Viron lippu, joka on vaakasuuntainen trikolori. Värit ylhäältä alaspäin ovat sininen, musta, ja valkoinen.</p>
-
+<p>Ohjelmointiympäristö antaa valmiiksi jonkin verran koodia, johon ei tässä vaiheessa puututa kovinkaan tarkasti. Valmiissa pohjassa on kaksi kaarisulkeilla erotettua ohjelmablokkia, ja oma ohjelmakoodi sijoitetaan blokkien väliin. Ensimmäisen blokin väliin tulee tässä vaiheessa createCanvas-komento, ja toisen blokin väliin kaikki muu.</p>
+<p>createCanvas ja background ovat Javascript-komentoja, eli oikealta nimeltään aliohjelma- tai funktiokutsuja. Aliohjelmien pariin syvennytään myöhemmin, ja tässä vaiheessa pitää tietää vain se, että komennon jälkeen tulee suluissa pilkuilla erotettuna numeroarvoja, oikealta nimeltään parametrejä. Numeroarvoja voi olla nolla, jolloin pitää kuitenkin kirjoittaa sulut, tai enemmän, riippuen komennosta.</p>
+<p>On hyvä tapa päättää Javascript-komento puolipisteeseen. Sitä ei tarkalleen ottaen vaadita joka paikassa, mutta muissa ohjelmointikielissä se on yleensä pakollinen.</p>
 
 <ul>
   
