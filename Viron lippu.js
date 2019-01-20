@@ -16,15 +16,15 @@ function draw() {
   background(200);
   noStroke();
 	
-	// Sininen raita
-	fill(0, 114, 206);
+  // Sininen raita
+  fill(0, 114, 206);
   rect(50*1, 50*1, 50*11, 50*(7/3));
   
-	// Musta raita
-	fill(0);
+  // Musta raita
+  fill(0);
   rect(50*1, 50*(1+7/3), 50*11, 50*(7/3));
   
-	// Valkoinen raita
-	fill(255);
+  // Valkoinen raita
+  fill(255);
   rect(50*1, 50*(1+14/3), 50*11, 50*(7/3));
 }
