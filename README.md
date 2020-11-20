@@ -12,10 +12,28 @@ Lähdekoodia ohjelmoinnin opettamiseen
 
 <h3>Naiivi Viron lippu</h3>
 
+<h4>Tehtävänanto</h4>
 <p>Ensimmäinen tehtävä on piirtää Viron lippu, joka on vaakasuuntainen trikolori. Värit ylhäältä alaspäin ovat sininen, musta, ja valkoinen.</p>
-<p>Ohjelmointiympäristö antaa valmiiksi jonkin verran koodia, johon ei tässä vaiheessa puututa kovinkaan tarkasti. Valmiissa pohjassa on kaksi kaarisulkeilla erotettua ohjelmablokkia, ja oma ohjelmakoodi sijoitetaan blokkien väliin. Ensimmäisen blokin väliin tulee tässä vaiheessa createCanvas-komento, ja toisen blokin väliin kaikki muu.</p>
-<p>createCanvas ja background ovat Javascript-komentoja, eli oikealta nimeltään aliohjelma- tai funktiokutsuja. Aliohjelmien pariin syvennytään myöhemmin, ja tässä vaiheessa pitää tietää vain se, että komennon jälkeen tulee suluissa pilkuilla erotettuna numeroarvoja, oikealta nimeltään parametrejä. Numeroarvoja voi olla nolla, jolloin pitää kuitenkin kirjoittaa sulut, tai enemmän, riippuen komennosta.</p>
+
+<h4>Ensimmäistä kartaa p5.js web editorissa</h4>
+<p>Kun p5.js web editorin avaa, esille tulee valmis pohja. Vasemmalla puolella on ohjelman koodi, ja oikealle puolelle tulee ohjelman tekemä animaatio (tai piirros), kun painaa oikealle osoittavaa kolmiota ("play"). Animaation saa pysäytettyä painamalla neliötä ("stop").</p>
+<p>P5.js web editorin koodi-ikkunassa on valmis ohjelma, jonka voi käynnistää, mutta tässä vaiheessa se ei tee vielä mitään erikoista, vaan oikealle puolelle ilmestyy vain harmaa tausta, joka p5-kielenkäytössä tunnetaan nimellä kangas (canvas).</p>
+<p>Valmiiksi pohjaan annettu ohjelma jakautuu kahteen eri osaan, jotka ovat oikealta nimeltään aliohjelmia tai funktioita. Ensimmäisellä rivillä on aliohjelman nimi, tässä tapauksessa ne ovat setup ja draw. Varsinainen ohjelma kirjoitetaan aliohjelman nimen perässä olevien aaltosulkeiden väliin. Tässä tapuksessa varsinainen ohjelma koostuu kahdesta rivistä: createCanvas ja background. Tässä vaiheessa vain createCanvas sijoitetaan ensimmäiseen osaan (setup), ja kaikki muut rivit tulevat toiseen osaan (draw).</p>
+<p>CreateCanvas ja background ovat p5-komentoja, tarkemmin sanoen aliohjelmien kutsuja. Aliohjelmien pariin syvennytään myöhemmin, ja tässä vaiheessa pitää tietää vain se, että komennon jälkeen tulee suluissa pilkuilla erotettuna numeroarvoja, oikealta nimeltään parametrejä. Numeroarvoja voi olla nolla, jolloin pitää kuitenkin kirjoittaa sulut, tai enemmän, riippuen komennosta.</p>
 <p>On hyvä tapa päättää Javascript-komento puolipisteeseen. Sitä ei tarkalleen ottaen vaadita joka paikassa, mutta muissa ohjelmointikielissä se on yleensä pakollinen.</p>
+<p>CreateCanvas-komennon numeroarvot kertovat piirustuskankaan koon kuvapisteinä. Ensin on x-akselin eli vaaka-akselin suuntainen koko, ja toisena y- eli pystyakselin suuntainen koko.</p>
+<p>Background-komennon yksi numeroarvo kertoo, mikä on kankaan eli taustan väri. Yhdellä numerolla valitaan jokin harmaasävy niin, että 0 on täysin musta ja 255 täysin valkoinen. Background-komennolla voi olla myös kolme numeroarvoa, jolloin ne kertovat punaisen, vihreän ja sinisen osavärin osuuden lopullisessa taustavärissä. Esimerkiksi 255,0,0 tarkoittaa kirkkaanpunaista ja 0,0,255 kirkkaansinistä. Värejä voi myös yhdistää: 255,0,255 tuottaa purppuraa ja 200,255,200 vaaleanvihreää.</p>
+<p>Kokeile muuttaa kankaan kokoa ja sen taustaväriä. Muista painaa play-nappulaa, niin näet tekemiesi muutosten vaikutuksen.</p>
+
+<h4>Lipun piirtäminen</h4>
+<p>Esimerkkiratkaisussa kankaan leveydeksi on valittu 500 kuvapistettä ja korkeudeksi 400 kuvapistettä. Muun piirtämisen tulisi pysyä näiden arvojen alapuolella, jotta koko lippu mahtuu näkyviin.</p>
+<p>NoStroke-komento käskee, että kuvioille ei piirretä ääriviivoja. Se ei ota yhtään numeroa parametrinään, mutta sulut pitää muistaa kirjoittaa siitä huolimatta.</p>
+<p>Fill-komento käskee, että piirrettävät kuviot pitää täyttää valitulla värillä. Fill ottaa parametreikseen yhden tai kolme numeroa, kuten background-komentokin: yhdellä numerolla saadaan harmaasävy, kolmella numerolla punaisen, vihreän ja sinisen osavärin osuudet (red, green, blue, eli ns. RGB-tyyppinen väri). Kaikki fill-komennon jälkeen tulevat kuviot piirretään samalla värillä, kunnes annetaan uusi fill-komento.</p>
+<p>Rect-komento piirtää suorakaiteen. Kaksi ensimmäistä parametriä ovat suorakaiteen vasemman yläkulman koordinaatit: 0,0 on vasen yläkulma, ja tässä tapauksessa 500,400 olisi kankaan oikea alakulma. Kaksi viimeistä parametriä ovat suorakaiteen koko kuvapisteinä: 100,100 olisi neliön muotoinen suorakaide, jonka sivu olisi 100 kuvapistettä pitkä.</p>
+
+
+
+
 
 <ul>
   
